@@ -1,0 +1,363 @@
+  
+*{
+    margin:0px;
+    padding:0px;
+
+}
+body{
+  
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(60deg,rgb(16, 215, 230),rgb(64, 211, 19)) ;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+ 
+}
+#form h2{
+    font-size:20px;
+    text-align: center;
+    margin-bottom:0px;
+    font-size:35px ;
+    color:rgb(128,0,0);
+    text-shadow:3px 5px 5px  rgb(100,100,100);
+}
+#form1 h2{
+    font-size:20px;
+    text-align: center;
+    margin-top:0px;
+    font-size:35px ;
+    color:rgb(128,0,0);
+    text-shadow:3px 5px 5px  rgb(100,100,100);
+}
+#form .fa-user-circle-o{
+    font-size:70px !important;
+    color: black;
+    position: relative ;
+    top:-45px ;
+    left:140px;
+
+}
+#form1 .fa-user-circle-o{
+    font-size:70px !important;
+    color: #0000b3;
+ 	position: relative ;
+    top:-45px ;
+    left:125px;
+
+}
+ #form{
+    
+    width:340px;
+    min-height: 510px;
+    background-color: #fff;
+    background-image:linear-gradient(to top,rgb(230, 153, 153),	rgb(161, 131, 252));
+    border:2px solid 	#f906bc;
+    box-shadow: 2px 6px 8px black;
+    border-radius:20px;
+} 
+
+#form1{
+    display:none;
+    width:320px;
+    min-height: 500px;
+    background-color: #fff;
+    background-image:linear-gradient(to top,rgb(230, 153, 153),	rgb(161, 131, 252));
+    border:2px solid #f906bc;
+    box-shadow: 2px 3px 4px black;
+    border-radius:20px;
+}
+/* error box */
+p{
+    text-align: center ;
+    margin-top:15px;
+    color:blue;
+}
+p#error{
+    color:rgb(104, 33, 33);
+    font-weight: bold;
+    width:100%;
+    border:0px solid rgb(56, 6, 173);
+    border-radius:10px;
+    background-color: #fff;
+    
+}
+p#login-error{
+    color:rgb(104, 33, 33);
+    font-weight: bold;
+    width:100%;
+    border:0px solid rgb(56, 6, 173);
+    border-radius:10px;
+    background-color: #fff;
+    
+}
+
+#form h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:	rgb(15,37,240);
+    font-size:32px;
+    margin-top:15px;
+    text-align:center;
+    text-shadow:3px 5px 5px  rgb(100,100,100);
+
+}
+ #btn_larea{
+  
+    font-size: 20px;
+    cursor: pointer;
+    color:rgb(128,0,0);
+    font-weight: bold;
+    
+
+}
+
+#form1 h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color:	rgb(6, 6, 249);
+    font-size:30px;
+    margin-top:3px;
+    text-align:center;
+    text-shadow: 2px 3px 3px rgb(104, 33, 33);
+
+}
+#form input{
+                 position: relative;
+             display: block;
+             margin : 0 auto;
+        
+    margin-top:20px ;
+    padding:10px;
+    /* margin-left:35px; */
+    text-align:center;
+}
+#form1 input{
+    position: relative;
+    display: block;
+    margin : 0 auto;
+
+    margin-top:20px ;
+    padding:10px;
+    
+    /* margin-left:35px; */
+    text-align:center;
+}
+#form input[type="email"],
+#form input[type="password"],
+#form input[type="text"]
+    {
+     border:none; 
+    border-bottom:2px solid red;
+    outline:none;
+    background-color: transparent;
+    color:blue;
+    
+     
+} 
+#form1 input[type="email"],
+#form1 input[type="password"],
+#form1 input[type="text"]
+    {
+    border:none; 
+    border-bottom:2px solid red;
+    outline:none;
+    background-color: transparent;
+    color:blue;
+     
+} 
+
+
+::placeholder{
+    color:black;
+}
+ #form button{
+    margin-top:50px ;
+    padding:10px;
+    color:blue;
+    font-size:20px;
+    border:2px solid 	#f906bc;
+    box-shadow: 2px 3px 4px black;
+    background-color:rgb(191, 191, 191);  
+    margin-left:140px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+} 
+#form1 button{
+    margin-top:50px ;
+    padding:8px;
+    margin-left:40px;
+    color:blue;
+    font-size:20px;
+    border:2px solid 	#f906bc;
+    box-shadow: 2px 3px 4px black;
+    background-color:rgb(191, 191, 191);  
+    margin-left:140px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.com{
+    font-size:70px !important;
+    color:white;
+    position: relative ;
+    top:2px ;
+    left:120px;
+  
+
+}
+
+#log{
+
+    font-size:20px;
+    color:rgb(255, 0, 13);
+    border:2px solid blue;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    float:right;
+
+}
+  
+
+.list{
+   
+    list-style-type: none;
+    width: 50%;
+    min-height:30px; 
+    word-wrap: break-word;   
+    font-weight: bold;
+    color:tomato;
+    padding:15px 15px;
+     margin-top:10px; 
+    box-shadow: 2px 3px 5px rgb(235, 13, 161);
+    border-radius: 20px;
+    background-color: rgb(189, 192, 190);
+    float:left;
+    
+    }
+ .list1{
+       
+    list-style-type: none;
+    width:50%; 
+    min-height:30px;
+    word-wrap: break-word; 
+    color:rgb(54, 14, 10);
+    padding:15px 15px;
+    margin-top:10px; 
+    box-shadow: 2px 3px 5px rgb(235, 13, 161);
+    border-radius: 20px;
+    background-color: #35d4f0;
+    float:right; 
+    
+
+    }  
+    
+ .delbtn{
+     
+    border:2px solid blue;
+    border-radius: 40px;
+    background-color: rgb(236, 62, 252); 
+    margin-left:5px;
+    color:rgb(20, 16, 16);
+    font-weight: bold;
+    font-size:15px;
+    padding-left:10px;
+ 
+ }
+
+ 
+ /************************* chatapp.html **************/
+ 
+#container2{
+       
+    display:none; 
+    width:430px;
+    height: 560px;
+    border:2px solid black;
+    margin:50px auto;
+    box-shadow:2px 4px 6px rgb(54, 144, 80);
+    border-radius: 10px;
+     
+  }
+/* chat-header****************** */
+  .chat{
+  
+ 
+    background: tomato;
+    background-image: linear-gradient(130deg,	rgb(0, 255, 255),rgb(161, 131, 252));
+    
+} 
+.chat span{
+    font-size: 25px;
+    color:red;
+    padding-top: 10px;
+}
+.fa-comments{
+
+    font-size:60px !important;
+    color:black;
+    padding-left: 10px;
+}
+/* ********************message-box****************** */
+#message{
+   height:440px;
+   width:100%;
+     background: rgb(230, 153, 153);
+     overflow: scroll; 
+ }
+/* *******************type msg area**************** */
+.msg-area{ 
+    
+    height: 30px; 
+    position:fixed;
+      bottom: 80px;  
+}
+.msg-area input[type="text"]{
+ 
+    width:340px;
+    padding: 10px;  
+    padding-left:15px;
+     border-radius: 20px;
+     background-color: cyan;
+     font-size:15px;
+     color:black;
+     margin-top:20px;
+ }
+ .fa-paper-plane{
+    font-size:20px;
+    color:rgb(212, 41, 41)
+ 
+}
+#btn{
+    width: 40px;
+    height: 40px;
+    border:3px solid red;
+    border-radius: 30px;
+    background-color: violet;
+     font-size:20px;
+    color:black;
+} 
+
+@media only screen and (max-width:600px){
+  
+    #container2{
+      width:80%;
+  }
+    .msg-area input[type="text"]{   
+        width:200px;
+       height:10px;
+    }
+    #btn{
+        width: 30px;
+        height: 30px;
+      
+    } 
+    #log{
+
+        
+        margin-right: 20px;
+    
+    }
+       }    

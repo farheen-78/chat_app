@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+          apiKey: "AIzaSyA_R57r9iWb4BgC8Bk_v9GCs6HGDQUUS5U",
+          authDomain: "signup-form-945c1.firebaseapp.com",
+          databaseURL: "https://signup-form-945c1.firebaseio.com",
+          projectId: "signup-form-945c1",
+          storageBucket: "signup-form-945c1.appspot.com",
+          messagingSenderId: "351399336614",
+          appId: "1:351399336614:web:fec6e687081cab6b4f3267",
+          measurementId: "G-S945HV9LG5"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+   
+      </script>
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- *****************************sign up *************************************-->
+    
+    <div class="container">
+<div id="form">
+   
+    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+    <h2> Welcome To Chat app</h2>
+    <h1>Create Account</h1>
+    <p id="error"></p>
+    <input  type="text" name="user" placeholder="username" size="30" id="uname" />
+     <input  type="email" name="email" placeholder="Enter Email Address" size="30" id="email" />
+    <input id="pass" type="password" name="pass" placeholder="Enter Password" size="30" />
+   <p> Have an account <span id="btn_larea" onclick="login_area()">Login now! </span></p>
+     
+
+    
+
+    <button onclick="signup()">SignUp</button>
+
+
+</div>
+
+</div>
+<!-- ************************************signup end************************************* -->
+
+<!-- ****************************Login ************************************-->
+
+<div class="main">
+    <div id="form1">
+       
+        <i class="fa fa-user-circle-o" hiaria-dden="true"></i>
+        <h2> Chat Now</h2>
+        <i class="fa  com fa-comments" aria-hidden="true"></i>
+        <h1 >Login Your Account</h1>
+        <p id="login-error"></p>
+        <input type="text" name="uname" id="login-user" size="30" placeholder="username">
+         <input  type="email" name="email" placeholder="Enter Email Address" size="30" id="login-email" />
+        <input  type="password" name="pass" placeholder="Enter Password" id="login-pass" size="30" />
+        <button onclick="login()">Login</button>
+    
+    
+    
+    
+    </div>
+    </div>
+<!-- ************************************chat area*********************************************** -->
+
+    <div id="container2">
+        <div class="chat">
+            <i class="fa fa-comments" aria-hidden="true"></i>
+            <span>Welcome to Chat App</span>
+            <button id="log" onclick="logOut()">LogOut</button>
+        </div>
+    
+      <div>
+        <ul id="message">
+
+        </ul>
+
+          
+    </div>
+    <div class="msg-area">
+       <input type="text" name="message" id="msg"  placeholder="Type message here">
+       <button id="btn" onclick="sendMessage()"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+   </div> 
+    </div>
+
+     
+    <script src="app.js"></script>
+</body>
+</html>
